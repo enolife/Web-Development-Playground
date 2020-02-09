@@ -29,17 +29,35 @@ label {
 .form-control {
     height: 2.8rem;
     border-radius: 8px;
+    background-color: #bed1fb17 !important;
 }
 
+
 .form-control:focus {
-    border: 1px solid #e73182;
+    border: 1.5px solid #e73182;
     box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
 }
 
 input:required:focus:valid {
-    border: 1px solid #7cbf8b;
+    border: 1.5px solid #7cbf8b;
 }
 
 input:valid {
     border: 1px solid #7cbf8b;
+}
+
+.btn {
+    margin-bottom: 2%;
+}
+
+.text-muted {
+    font-size: .85rem;
+}
+
+.form-text {
+    margin-bottom: 15%;
+}
+
+.return_homepage_text {
+    font-weight: 600;
 }
