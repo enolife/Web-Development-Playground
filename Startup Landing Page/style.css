@@ -1,10 +1,59 @@
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url('images/background_image.jpg');
-    overflow-x: hidden;
+@font-face {
+    font-family: 'Boing';
+    src: url('https://raw.githubusercontent.com/PaystackHQ/website-v1/master/fonts/boing/Boing_SemiboldWEB.woff2') format('woff2');
+
 }
 
-p {
-    color: white;
+body {
+    background: url('images/background_image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    overflow: hidden;
 }
+
+.large_title {
+    color: white;
+    font-family: 'Boing', "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+hr {
+    border-color: #f05f44;
+    width: 50px;
+    border-width: 3px;
+    margin-top: 16%;
+}
+
+.main__button {
+    padding: .7rem 1.5rem;
+    border-radius: 100vh !important;
+}
+
+.btn-primary {
+    background-color: #f05f44;
+    border-color: #f05f44;
+}
+
+.btn-primary:hover {
+    background-color: #df5252;
+    border-color: #df5252;
+}
+
+/* .btn::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #c52726;
+    margin: 5px 35% 0;
+    transition: ease-in-out 300ms;
+}
+
+.btn:hover::after {
+    width: 40%;
+} */
