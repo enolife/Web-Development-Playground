@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startup Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="register.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="//db.onlinewebfonts.com/c/0ba9253983e3a7a7cc896e85b1ceb2be?family=Futura+PT+Web+Book" rel="stylesheet"
+        type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="form_container container justify-content-center align-items-center ">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center vh-100">
+                <form accept-charset="UTF-8" class="col-lg-6 col-10"
+                    action="https://www.formbackend.com/f/af657fd3e0d8b2e8" method="POST">
+
+                    <div class="form-group">
+                        <label id="name-label" for="name"><span><strong>Name</strong></span></label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                            pattern="[A-Za-z ]{1,32}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="email-label" for="email"><span><strong>Email</strong></span></label>
+                        <input type="email" class="form-control" placeholder="Email Address" inputmode="email"
+                            id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                    </div>
+
+                    <button type="submit" id="submit" class="btn btn-lg btn-primary col-12">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

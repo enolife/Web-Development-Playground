@@ -1,0 +1,16 @@
+body {
+    background-color: #e3ebf1;
+}
+
+.form-group {
+    margin-bottom: 7%;
+}
+
+label {
+    font-family: 'Futura PT Web Book', "Montserrat", sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    height: 2.8rem
+}

@@ -17,7 +17,7 @@ body {
 .large_title {
     color: white;
     font-family: 'Boing', "Montserrat", sans-serif;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -26,7 +26,7 @@ hr {
     border-color: #f05f44;
     width: 50px;
     border-width: 3px;
-    margin-top: 16%;
+    margin-top: 27%;
 }
 
 .main__button {
@@ -43,17 +43,3 @@ hr {
     background-color: #df5252;
     border-color: #df5252;
 }
-
-/* .btn::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #c52726;
-    margin: 5px 35% 0;
-    transition: ease-in-out 300ms;
-}
-
-.btn:hover::after {
-    width: 40%;
-} */
