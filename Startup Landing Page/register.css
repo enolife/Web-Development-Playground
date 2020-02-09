@@ -1,5 +1,16 @@
 body {
-    background-color: #e3ebf1;
+    background: url('images/reg_bg.svg') no-repeat right center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+    overflow: hidden;
+}
+
+form {
+    background-color: #ffffffad;
+    border-radius: 8px;
 }
 
 .form-group {
@@ -11,6 +22,24 @@ label {
     font-size: 1.2rem;
 }
 
+.name {
+    margin-top: 10%;
+}
+
 .form-control {
-    height: 2.8rem
+    height: 2.8rem;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border: 1px solid #e73182;
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
+}
+
+input:required:focus:valid {
+    border: 1px solid #7cbf8b;
+}
+
+input:valid {
+    border: 1px solid #7cbf8b;
 }

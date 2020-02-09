@@ -24,16 +24,18 @@
 
 <body>
 
-    <div class="form_container container justify-content-center align-items-center ">
+    <div class="form_container container">
         <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-center vh-100">
+            <div class="col-12 d-flex align-items-center  vh-100">
+
+
                 <form accept-charset="UTF-8" class="col-lg-6 col-10"
                     action="https://www.formbackend.com/f/af657fd3e0d8b2e8" method="POST">
-
+                    <h3 class="">Register</h3>
                     <div class="form-group">
-                        <label id="name-label" for="name"><span><strong>Name</strong></span></label>
+                        <label id="name-label" class="name" for="name"><span><strong>Name</strong></span></label>
                         <input type="text" class="form-control" placeholder="Name" id="name" name="name"
-                            pattern="[A-Za-z ]{1,32}" required>
+                            pattern="[A-Za-z ]{1,32}" minlength="2" required>
                     </div>
 
                     <div class="form-group">
