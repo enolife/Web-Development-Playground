@@ -34,7 +34,7 @@ label {
 
 
 .form-control:focus {
-    border: 1.5px solid #e73182;
+    border: 1.5px solid #df0c6b;
     box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
 }
 

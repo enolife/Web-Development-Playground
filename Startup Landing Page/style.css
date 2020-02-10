@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Boing';
-    src: url('https://raw.githubusercontent.com/PaystackHQ/website-v1/master/fonts/boing/Boing_SemiboldWEB.woff2') format('woff2');
-
-}
-
 body {
     background: url('images/background_image.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -16,7 +10,7 @@ body {
 
 .large_title {
     color: white;
-    font-family: 'Boing', "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.3rem;
     font-weight: 800;
     letter-spacing: 2px;
@@ -26,7 +20,7 @@ hr {
     border-color: #f05f44;
     width: 50px;
     border-width: 3px;
-    margin-top: 27%;
+    margin-top: 25%;
 }
 
 .main__button {
