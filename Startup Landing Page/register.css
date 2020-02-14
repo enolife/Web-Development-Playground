@@ -1,10 +1,6 @@
 body {
     background: url('images/reg_bg.svg') no-repeat right center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
     background-size: contain;
-
     overflow: hidden;
 }
 
