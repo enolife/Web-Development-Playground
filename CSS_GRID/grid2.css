@@ -54,7 +54,7 @@ h6 {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 4fr;
 }
 
 /* Each item in our grid will contain numbers */
