@@ -53,9 +53,11 @@ h6 {
 .container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 3fr 4fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
+
+
 
 /* Each item in our grid will contain numbers */
 .item {
@@ -68,6 +70,11 @@ h6 {
     font-size: 35px;
     background-color: var(--yellow);
     /* best colour */
+}
+
+.item9 {
+    background: #0ac749;
+    grid-column: span 2;
 }
 
 .item p {
