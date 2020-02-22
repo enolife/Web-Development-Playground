@@ -74,7 +74,8 @@ h6 {
 
 .item9 {
     background: #0ac749;
-    grid-column: span 2;
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
 .item p {
