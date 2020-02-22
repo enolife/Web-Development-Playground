@@ -53,8 +53,8 @@ h6 {
 .container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr 2fr);
+    grid-template-rows: repeat(10, 50px);
 }
 
 
@@ -72,10 +72,33 @@ h6 {
     /* best colour */
 }
 
-.item9 {
-    background: #0ac749;
+.item1 {
+    grid-column: 3/6;
+}
+
+.item2 {
+    grid-column: 5/-1
+}
+
+.item5 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item8 {
+    grid-row: span 2;
+}
+
+.item15 {
     grid-column: 1/-1;
-    grid-row: 3/9;
+}
+
+.item18 {
+    grid-column: 6/10;
+}
+
+.item20 {
+    grid-row: 5/-9;
 }
 
 .item p {
