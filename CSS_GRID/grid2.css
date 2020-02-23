@@ -52,11 +52,14 @@ h6 {
 
 .container {
     display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(5, 1fr 2fr);
-    grid-template-rows: repeat(10, 50px);
+    grid-gap: 25px;
+    border: solid 10px #000000;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 150px 150px 100px;
+    grid-template-areas: "sidebar_1 content sidebar_2"
+        "sidebar_1 content sidebar_2"
+        "footer footer footer"
 }
-
 
 
 /* Each item in our grid will contain numbers */
@@ -72,34 +75,6 @@ h6 {
     /* best colour */
 }
 
-.item1 {
-    grid-column: 3/5;
-}
-
-.item2 {
-    grid-column: 5/-1
-}
-
-.item5 {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.item8 {
-    grid-row: span 2;
-}
-
-.item15 {
-    grid-column: 1/-1;
-}
-
-.item18 {
-    grid-column: 6/9;
-}
-
-.item20 {
-    grid-row: 4/7;
-}
 
 .item p {
     margin: 0 0 5px 0;
