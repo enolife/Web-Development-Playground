@@ -61,6 +61,22 @@ h6 {
         "footer footer footer"
 }
 
+.sidebar_1 {
+    grid-area: sidebar_1
+}
+
+.sidebar_2 {
+    grid-area: sidebar_2
+}
+
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 /* Each item in our grid will contain numbers */
 .item {
