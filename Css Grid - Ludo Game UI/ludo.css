@@ -3,11 +3,16 @@
 *:after {
     box-sizing: inherit;
 }
-body{
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+body {
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .container {
     background-color: #000000;
     border: solid 2px #000000;
@@ -62,9 +67,9 @@ body{
     grid-row: 1/7;
 }
 
-.green_player_image{
+.green_player_image {
     background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882888/willian-removebg-preview_xmbfz5.png),
-    linear-gradient(0deg, rgb(6, 86, 46) 0%, rgb(7, 121, 44) 42%, rgba(156, 235, 49, 1) 100%);
+        linear-gradient(0deg, rgb(6, 86, 46) 0%, rgb(7, 121, 44) 42%, rgba(156, 235, 49, 1) 100%);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -101,7 +106,7 @@ body{
 
 .red_player_image {
     background: url(https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/a_hflip/v1582880794/Ada_Hegerberg.png),
-    linear-gradient(0deg, rgba(174, 10, 11, 1) 0%, rgb(169, 22, 21) 42%, rgb(125, 34, 34) 100%);
+        linear-gradient(0deg, rgba(174, 10, 11, 1) 0%, rgb(169, 22, 21) 42%, rgb(125, 34, 34) 100%);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,8 +128,8 @@ body{
     background-repeat: no-repeat;
 }
 
-.dice{
-width: 12vh;
+.dice {
+    width: 12vh;
 }
 
 
@@ -163,9 +168,9 @@ width: 12vh;
     grid-row: 10/16;
 }
 
-.blue_player_image{
+.blue_player_image {
     background: url(https://res.cloudinary.com/dvhndpbun/image/upload/c_scale,h_500,q_auto:good/v1582877035/david_silva.png),
-    #066298;
+        #066298;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,11 +208,50 @@ width: 12vh;
     grid-column: 10/16;
     grid-row: 10/16;
 }
-.yellow_player_image{
+
+.yellow_player_image {
     background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882736/Danielle_Carter.png),
-    #dcb400;
+        #dcb400;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+.red_seed_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 6.5vh);
+}
+
+.red_seed {
+    background: radial-gradient(circle, rgb(232, 14, 14) 24%, rgba(219, 5, 5, 1) 45%, rgba(191, 42, 42, 1) 70%);
+    height: 5vh;
+    width: 5vh;
+    border-radius: 100vh;
+    border: 3px solid #dc0e0e;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    
+}
+
+.red_seed_1 {
+    grid-column: 1;
+    margin: 8%;
+}
+
+.red_seed_2 {
+    grid-column: 5;
+    margin: 8% -10%;
+}
+
+
+.red_seed_3 {
+    grid-row: 6;
+    margin: -8% 8%;
+}
+    
+
+.red_seed_4 {
+    grid-column: 3;
+    grid-row: 3;
 }
