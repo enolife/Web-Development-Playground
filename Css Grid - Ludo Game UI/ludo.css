@@ -75,6 +75,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.green_seed_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 6.5vh);
+}
+
 
 
 
@@ -225,7 +231,7 @@ body {
 }
 
 .red_seed {
-    background: radial-gradient(circle, rgb(232, 14, 14) 24%, rgba(219, 5, 5, 1) 45%, rgba(191, 42, 42, 1) 70%);
+    background: radial-gradient(circle, rgb(255, 0, 0) 24%, rgb(255, 0, 0) 45%, rgb(162, 5, 5) 70%);
     height: 5vh;
     width: 5vh;
     border-radius: 100vh;
@@ -235,7 +241,7 @@ body {
 }
 
 .red_seed_1 {
-    grid-column: 1;
+    grid-column: 2;
     margin: 8%;
 }
 
@@ -255,3 +261,36 @@ body {
     grid-column: 3;
     grid-row: 3;
 }
+
+.green_seed{
+    background: radial-gradient(circle, rgb(0, 255, 55) 24%, rgb(0, 255, 43) 45%, rgb(5, 162, 32) 70%);
+      height: 5vh;
+      width: 5vh;
+      border-radius: 100vh;
+      border: 3px solid #0edc23;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .green_seed_1{
+      grid-column: 2;
+      grid-row: 4;
+  }
+
+  .green_seed_2{
+    grid-column: 1;
+    grid-row: 6;
+    margin: -8% 8%;
+}
+
+.green_seed_3{
+    grid-column: 3;
+    grid-row: 6;
+    margin: -8% 8%;
+}
+
+.green_seed_4{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+
