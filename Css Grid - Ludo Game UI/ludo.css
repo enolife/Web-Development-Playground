@@ -111,6 +111,9 @@ body{
 
 
 .house {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     grid-column: 7/10;
     grid-row: 7/10;
     background-color: #000000;
@@ -121,8 +124,7 @@ body{
 }
 
 .dice{
-width: 57%;
-transform: translate(42px, 53px);
+width: 12vh;
 }
 
 
