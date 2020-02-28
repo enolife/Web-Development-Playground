@@ -135,7 +135,7 @@ body {
 }
 
 .dice {
-    width: 12vh;
+    width: 14vh;
 }
 
 
@@ -318,6 +318,7 @@ body {
 .blue_seed_2 {
     grid-column: 2;
     grid-row: 6;
+    margin: -5%;
     
 }
 
@@ -331,11 +332,12 @@ body {
 .blue_seed_4 {
     grid-column: 1;
     grid-row: 5;
+    margin: 5%;
 }
 
 .yellow_seed_container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 6.5vh);
 }
 
@@ -354,13 +356,13 @@ body {
 .yellow_seed_1 {
     grid-column: 5;
     grid-row: 4;
-    margin: 8%;
+    /* margin: 2% -20%; */
 }
 
 .yellow_seed_2 {
     grid-column: 4;
     grid-row: 6;
-    
+    margin: -4%;
 }
 
 
@@ -373,4 +375,5 @@ body {
 .yellow_seed_4 {
     grid-column: 4;
     grid-row: 5;
+    margin: 2% 28%;
 }
