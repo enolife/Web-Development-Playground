@@ -377,33 +377,32 @@ body {
 
 /* PLAYER NAMES */
 .player_name {
-    font-family: 'Quicksand';
-    font-size: calc(12px + 6 * ((100vw - 1020px) / 680));
+    font-family: 'Fredoka One';
+    font-size: calc(10px + 6 * ((100vw - 1020px) / 680));
     writing-mode: vertical-rl;
-    letter-spacing: .05rem;
-    text-shadow: 2px 2px 1px #130501;
+    letter-spacing: .03rem;
+    text-shadow: 1px 2px 1px #130501;
     white-space: nowrap;
-    color: #c2d8bc;
+    color: #d5ded2;;
     justify-content: center;
     user-select: none;
 }
-
-.leftplayer_name{
-    display: grid; 
+.leftplayer_name {
+    display: grid;
     grid-row: 2/6;
     grid-column: 1/2;
     justify-self: left;
 }
 
-.rightplayer_name{
-    display: grid; 
+.rightplayer_name {
+    display: grid;
     grid-row: 2/6;
     grid-column: 4;
     justify-self: right;
 }
 
-.yellowplayer_name{
-    grid-column: 5;   
+.yellowplayer_name {
+    grid-column: 5;
 }
 
 
@@ -442,9 +441,9 @@ body {
     .dice {
         width: 5.5vh;
     }
-    .player_name {      
+
+    .player_name {
         font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
         text-shadow: 1px 1px 1px #130501;
     }
 }
-
