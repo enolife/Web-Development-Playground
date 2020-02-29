@@ -442,6 +442,9 @@ body {
     .dice {
         width: 5.5vh;
     }
+    .player_name {      
+        font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
+        text-shadow: 1px 1px 1px #130501;
+    }
 }
-
 
