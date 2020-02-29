@@ -419,6 +419,7 @@ body {
     .container {
         margin: 25% 0;
         grid-template-rows: repeat(15, 3.8vh);
+        grid-gap: 0px;
     }
 
     .yellow_seed,
