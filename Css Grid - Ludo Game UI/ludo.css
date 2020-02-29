@@ -387,8 +387,8 @@ body {
 
 .yellow_seed,.red_seed,.green_seed,.blue_seed{
     box-shadow:  0px 1px 3px 0.1px rgba(0, 0, 0, 0.75);
-    height: 1.6vh;
-    width: 1.6vh;
+    height: 2vh;
+    width: 2vh;
     border-width: 1px;
 }
 .yellow_seed_container,.red_seed_container,.green_seed_container,.blue_seed_container{
