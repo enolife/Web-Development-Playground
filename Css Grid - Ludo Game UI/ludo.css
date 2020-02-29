@@ -7,7 +7,7 @@
 body {
     /* fallback for old browsers */
     background: #E0EAFC;
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #141e30, #243b55);
 }
 
@@ -378,27 +378,39 @@ body {
 
 @media screen and (max-width: 767px) {
 
-.container{
-    margin: 25% 0;
-    grid-template-rows: repeat(15, 3.8vh);
+    body {
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .container {
+        margin: 25% 0;
+        grid-template-rows: repeat(15, 3.8vh);
+    }
+
+    .yellow_seed,
+    .red_seed,
+    .green_seed,
+    .blue_seed {
+        box-shadow: 0px 1px 3px 0.1px rgba(0, 0, 0, 0.75);
+        height: 2vh;
+        width: 2vh;
+        border-width: 1px;
+    }
+
+    .yellow_seed_container,
+    .red_seed_container,
+    .green_seed_container,
+    .blue_seed_container {
+        grid-template-rows: repeat(6, 3.9vh);
+    }
+
+    .dice {
+        width: 5.5vh;
+    }
 }
 
-.yellow_seed,.red_seed,.green_seed,.blue_seed{
-    box-shadow:  0px 1px 3px 0.1px rgba(0, 0, 0, 0.75);
-    height: 2vh;
-    width: 2vh;
-    border-width: 1px;
-}
-.yellow_seed_container,.red_seed_container,.green_seed_container,.blue_seed_container{
-    grid-template-rows: repeat(6, 3.9vh);
-}
-
-.dice{
-    width: 5.5vh;
-}
-}
-
-.player_name{
+.player_name {
     font-family: 'Montserrat';
     font-size: calc(14px + 6 * ((100vw - 1020px) / 680));
     display: grid;
@@ -409,5 +421,5 @@ body {
     margin: 0;
     white-space: nowrap;
     color: blanchedalmond;
-    
+
 }
