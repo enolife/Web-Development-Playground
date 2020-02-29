@@ -382,7 +382,7 @@ body {
 
 .container{
     margin: 25% 0;
-    grid-template-rows: repeat(15, 3.5vh);
+    grid-template-rows: repeat(15, 3.8vh);
 }
 
 .yellow_seed,.red_seed,.green_seed,.blue_seed{
@@ -392,7 +392,7 @@ body {
     border-width: 1px;
 }
 .yellow_seed_container,.red_seed_container,.green_seed_container,.blue_seed_container{
-    grid-template-rows: repeat(6, 3.7vh);
+    grid-template-rows: repeat(6, 3.9vh);
 }
 
 .dice{
