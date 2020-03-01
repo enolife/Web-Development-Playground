@@ -14,11 +14,12 @@ body {
 .container {
     display: grid;
     margin: 1% 20%;
-    border: solid 2px #000;
-    background-color: #000;
+    border: solid 20px #ffffff00;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(15, 6.3vh);
     grid-gap: 1px;
+    border-image: url("https://res.cloudinary.com/dvhndpbun/image/upload/e_brightness:80,q_auto:eco/v1583058310/wooden-frame.png") 8% stretch;
+    
 }
 
 .red {
