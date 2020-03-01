@@ -9,6 +9,7 @@ body {
     background: #141e30;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #141e30, #243b55);
+    overflow-y: hidden;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
     margin: 1% 20%;
     border: solid 20px;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 6.3vh);
+    grid-template-rows: repeat(15, 6vh);
     grid-gap: 1px;
     border-image: url("https://res.cloudinary.com/dvhndpbun/image/upload/e_brightness:80,q_auto:eco/v1583058310/wooden-frame.png") 8% stretch;
     
@@ -67,7 +68,7 @@ body {
 .green_seed_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 6.5vh);
+    grid-template-rows: repeat(6, 6.1vh);
 }
 
 .left_grid {
@@ -117,7 +118,7 @@ body {
 }
 
 .dice {
-    width: 13vh;
+    width: 12.3vh;
     filter: drop-shadow(1px 2px 2px black);
 }
 
@@ -199,7 +200,7 @@ body {
 .red_seed_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 6.5vh);
+    grid-template-rows: repeat(6, 6.1vh);
 }
 
 .red_seed {
@@ -265,7 +266,7 @@ body {
 .blue_seed_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 6.5vh);
+    grid-template-rows: repeat(6, 6.1vh);
 }
 
 .blue_seed {
@@ -303,7 +304,7 @@ body {
 .yellow_seed_container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 6.5vh);
+    grid-template-rows: repeat(6, 6.1vh);
 }
 
 .yellow_seed {
