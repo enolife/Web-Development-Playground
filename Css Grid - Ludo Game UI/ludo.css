@@ -14,7 +14,7 @@ body {
 .container {
     display: grid;
     margin: 1% 20%;
-    border: solid 20px #ffffff00;
+    border: solid 20px;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(15, 6.3vh);
     grid-gap: 1px;
