@@ -6,59 +6,50 @@
 
 body {
     /* fallback for old browsers */
-    background: #E0EAFC;
+    background: #141e30;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #141e30, #243b55);
 }
 
 .container {
-    background-color: #000000;
-    border: solid 2px #000000;
     display: grid;
+    margin: 1% 20%;
+    border: solid 2px #000;
+    background-color: #000;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(15, 6.3vh);
-    margin: 1% 20%;
     grid-gap: 1px;
-}
-
-.item {
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    border: solid 1px #000000;
 }
 
 .red {
     grid-column: 1/7;
     grid-row: 1/7;
-
 }
 
 .top_grid {
+    display: grid;
+    border: solid 2px #000;
+    background-color: #000;
     grid-column: 7/10;
     grid-row: 1/7;
-    background-color: #000000;
-    border: solid 2px #000000;
-    display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(3, auto);
 }
 
 .top_cells {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .green_arrow {
     background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582836619/ludo_green_triangle_kwyfu5.svg);
-    background-size: 58% 70%;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 58% 70%;
 }
 
 .green_background {
-    background-color: #88D835;
+    background-color: #88d835;
 }
-
 
 .green {
     grid-column: 10/16;
@@ -66,11 +57,10 @@ body {
 }
 
 .green_player_image {
-    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882888/willian-removebg-preview_xmbfz5.png),
-        linear-gradient(0deg, rgb(6, 86, 46) 0%, rgb(7, 121, 44) 42%, rgba(156, 235, 49, 1) 100%);
-    background-size: cover;
-    background-position: center center;
+    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882888/willian-removebg-preview_xmbfz5.png), linear-gradient(0deg, rgb(6, 86, 46) 0%, rgb(7, 121, 44) 42%, rgba(156, 235, 49, 1) 100%);
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .green_seed_container {
@@ -79,29 +69,26 @@ body {
     grid-template-rows: repeat(6, 6.5vh);
 }
 
-
-
-
 .left_grid {
+    display: grid;
+    border: solid 2px #000;
+    background-color: #fff;
+    background-color: #000;
     grid-column: 1/7;
     grid-row: 7/10;
-    background-color: #ffffff;
-    background-color: #000000;
-    border: solid 2px #000000;
-    display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(6, auto);
 }
 
 .left_cells {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .red_arrow {
     background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582840162/ludo_red_triangle2_dchdrx.svg);
-    background-size: 65% 90%;
-    background-position: 30% center;
     background-repeat: no-repeat;
+    background-position: 30% center;
+    background-size: 65% 90%;
 }
 
 .red_background {
@@ -109,27 +96,23 @@ body {
 }
 
 .red_player_image {
-    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/a_hflip/v1582880794/Ada_Hegerberg.png),
-        linear-gradient(0deg, rgba(174, 10, 11, 1) 0%, rgb(169, 22, 21) 42%, rgb(125, 34, 34) 100%);
+    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/a_hflip/v1582880794/Ada_Hegerberg.png), linear-gradient(0deg, rgba(174, 10, 11, 1) 0%, rgb(169, 22, 21) 42%, rgb(125, 34, 34) 100%);
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
-
-
-
 
 .house {
     display: grid;
+    background-color: #000;
+    background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582848526/house_square_triangles3_szij5g.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     grid-column: 7/10;
     grid-row: 7/10;
-    background-color: #000000;
-    background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582848526/house_square_triangles3_szij5g.svg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .dice {
@@ -137,36 +120,31 @@ body {
     filter: drop-shadow(1px 2px 2px black);
 }
 
-
 .right_grid {
+    display: grid;
+    border: solid 2px #000;
+    background-color: #fff;
+    background-color: #000;
     grid-column: 10/16;
     grid-row: 7/10;
-    background-color: #ffffff;
-    background-color: #000000;
-    border: solid 2px #000000;
-    display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(6, auto);
 }
 
 .right_cells {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .yellow_arrow {
     background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582841040/ludo_yellow_triangle_kqvpju.svg);
-    background-size: 65% 90%;
-    background-position: 65% 30%;
     background-repeat: no-repeat;
+    background-position: 65% 30%;
+    background-size: 65% 90%;
 }
 
 .yellow_background {
     background-color: #facd02;
 }
-
-
-
-
 
 .blue {
     grid-column: 1/7;
@@ -174,40 +152,36 @@ body {
 }
 
 .blue_player_image {
-    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/c_scale,h_500,q_auto:good/v1582877035/david_silva.png),
-        #066298;
+    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/c_scale,h_500,q_auto:good/v1582877035/david_silva.png), #066298;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
-
 .bottom_grid {
+    display: grid;
+    border: solid 2px #000;
+    background-color: #000;
     grid-column: 7/10;
     grid-row: 10/16;
-    background-color: #000000;
-    border: solid 2px #000000;
-    display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(3, auto);
 }
 
 .bottom_cells {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .blue_arrow {
     background-image: url(https://res.cloudinary.com/dvhndpbun/image/upload/v1582842073/ludo_blue_triangle_butyrg.svg);
-    background-size: 58% 70%;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 58% 70%;
 }
 
 .blue_cell {
     background-color: #0ba6d6;
 }
-
 
 .yellow {
     grid-column: 10/16;
@@ -215,12 +189,10 @@ body {
 }
 
 .yellow_player_image {
-    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882736/Danielle_Carter.png),
-        #dcb400;
+    background: url(https://res.cloudinary.com/dvhndpbun/image/upload/e_improve,q_auto:eco/v1582882736/Danielle_Carter.png), #dcb400;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .red_seed_container {
@@ -230,31 +202,28 @@ body {
 }
 
 .red_seed {
-    background: radial-gradient(circle, rgb(255, 0, 0) 24%, rgb(255, 0, 0) 45%, rgb(162, 5, 5) 70%);
-    height: 5vh;
     width: 5vh;
-    border-radius: 100vh;
+    height: 5vh;
     border: 3px solid #dc0e0e;
-    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
-
+    border-radius: 100vh;
+    background: radial-gradient(circle, rgb(255, 0, 0) 24%, rgb(255, 0, 0) 45%, rgb(162, 5, 5) 70%);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .75);
 }
 
 .red_seed_1 {
-    grid-column: 2;
     margin: 8%;
+    grid-column: 2;
 }
 
 .red_seed_2 {
-    grid-column: 4;
     margin: 8% -10%;
+    grid-column: 4;
 }
-
 
 .red_seed_3 {
-    grid-row: 6;
     margin: -8% 8%;
+    grid-row: 6;
 }
-
 
 .red_seed_4 {
     grid-column: 3;
@@ -262,12 +231,12 @@ body {
 }
 
 .green_seed {
-    background: radial-gradient(circle, rgb(0, 255, 55) 24%, rgb(0, 255, 43) 45%, rgb(5, 162, 32) 70%);
-    height: 5vh;
     width: 5vh;
-    border-radius: 100vh;
+    height: 5vh;
     border: 3px solid #0edc23;
-    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 100vh;
+    background: radial-gradient(circle, rgb(0, 255, 55) 24%, rgb(0, 255, 43) 45%, rgb(5, 162, 32) 70%);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .75);
 }
 
 .green_seed_1 {
@@ -276,22 +245,21 @@ body {
 }
 
 .green_seed_2 {
+    margin: -8% 8%;
     grid-column: 1;
     grid-row: 6;
-    margin: -8% 8%;
 }
 
 .green_seed_3 {
+    margin: -8% 8%;
     grid-column: 3;
     grid-row: 6;
-    margin: -8% 8%;
 }
 
 .green_seed_4 {
     grid-column: 4;
     grid-row: 3;
 }
-
 
 .blue_seed_container {
     display: grid;
@@ -300,38 +268,35 @@ body {
 }
 
 .blue_seed {
-    background: radial-gradient(circle, rgb(0, 196, 255) 24%, rgb(0, 173, 255) 45%, rgb(5, 111, 162) 70%);
-    height: 5vh;
     width: 5vh;
-    border-radius: 100vh;
+    height: 5vh;
     border: 3px solid #0ea7dc;
-    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 100vh;
+    background: radial-gradient(circle, rgb(0, 196, 255) 24%, rgb(0, 173, 255) 45%, rgb(5, 111, 162) 70%);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .75);
 }
 
 .blue_seed_1 {
+    margin: 8%;
     grid-column: 2;
     grid-row: 4;
-    margin: 8%;
 }
 
 .blue_seed_2 {
+    margin: -5%;
     grid-column: 2;
     grid-row: 6;
-    margin: -5%;
-
 }
-
 
 .blue_seed_3 {
-    grid-row: 6;
     margin: -8% 8%;
+    grid-row: 6;
 }
 
-
 .blue_seed_4 {
+    margin: 5%;
     grid-column: 1;
     grid-row: 5;
-    margin: 5%;
 }
 
 .yellow_seed_container {
@@ -341,13 +306,12 @@ body {
 }
 
 .yellow_seed {
-    background: radial-gradient(circle, rgb(255, 191, 0) 24%, rgb(255, 201, 2) 45%,
-            rgb(172, 148, 21) 70%);
-    height: 5vh;
     width: 5vh;
-    border-radius: 100vh;
+    height: 5vh;
     border: 3px solid #deb504;
-    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 100vh;
+    background: radial-gradient(circle, rgb(255, 191, 0) 24%, rgb(255, 201, 2) 45%, rgb(172, 148, 21) 70%);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .75);
 }
 
 .yellow_seed_1 {
@@ -356,37 +320,37 @@ body {
 }
 
 .yellow_seed_2 {
+    margin: -4%;
     grid-column: 4;
     grid-row: 6;
-    margin: -4%;
 }
-
 
 .yellow_seed_3 {
-    grid-row: 6;
     margin: -8% 8%;
+    grid-row: 6;
 }
 
-
 .yellow_seed_4 {
+    margin: 2% 28%;
     grid-column: 4;
     grid-row: 5;
-    margin: 2% 28%;
 }
 
 
 /* PLAYER NAMES */
+
 .player_name {
     font-family: 'Fredoka One';
     font-size: calc(10px + 6 * ((100vw - 1020px) / 680));
-    writing-mode: vertical-rl;
-    letter-spacing: .03rem;
-    text-shadow: 1px 2px 1px #130501;
-    white-space: nowrap;
-    color: #d5ded2;;
-    justify-content: center;
     user-select: none;
+    white-space: nowrap;
+    letter-spacing: .03rem;
+    color: #d5ded2;
+    text-shadow: 1px 2px 1px #130501;
+    writing-mode: vertical-rl;
+    justify-content: center;
 }
+
 .leftplayer_name {
     display: grid;
     grid-row: 2/6;
@@ -406,11 +370,9 @@ body {
 }
 
 
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
-
     body {
         background: linear-gradient(to right, #bdc3c7, #2c3e50);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -419,17 +381,17 @@ body {
     .container {
         margin: 25% 0;
         grid-template-rows: repeat(15, 3.8vh);
-        grid-gap: 0px;
+        grid-gap: 0;
     }
 
     .yellow_seed,
     .red_seed,
     .green_seed,
     .blue_seed {
-        box-shadow: 0px 1px 3px 0.1px rgba(0, 0, 0, 0.75);
-        height: 2vh;
         width: 2vh;
+        height: 2vh;
         border-width: 1px;
+        box-shadow: 0 1px 3px .1px rgba(0, 0, 0, .75);
     }
 
     .yellow_seed_container,
