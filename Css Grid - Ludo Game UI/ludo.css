@@ -20,7 +20,6 @@ body {
     grid-template-rows: repeat(15, 6vh);
     grid-gap: 1px;
     border-image: url("https://res.cloudinary.com/dvhndpbun/image/upload/e_brightness:80,q_auto:eco/v1583058310/wooden-frame.png") 8% stretch;
-    
 }
 
 .red {
@@ -123,9 +122,8 @@ body {
 }
 
 .dice:hover {
-    width: 12.3vh; 
+    width: 12.3vh;
 }
-
 
 .right_grid {
     display: grid;
@@ -217,19 +215,21 @@ body {
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .75);
 }
 
-.red_seed:hover{
+.red_seed:hover {
     box-shadow: 0 1px 3px 1px rgba(238, 85, 85, 0.774);
 }
 
-.green_seed:hover{
+.green_seed:hover {
     box-shadow: 0 1px 3px 1px rgba(85, 238, 154, 0.774);
 }
-.blue_seed:hover{
+
+.blue_seed:hover {
     box-shadow: 0 1px 3px 1px rgba(85, 177, 238, 0.774);
-}.yellow_seed:hover{
-    box-shadow: 0 1px 3px 1px rgba(255, 235, 59, 0.774);
 }
 
+.yellow_seed:hover {
+    box-shadow: 0 1px 3px 1px rgba(255, 235, 59, 0.774);
+}
 
 .red_seed_1 {
     margin: 8%;
@@ -390,26 +390,32 @@ body {
     grid-column: 5;
 }
 
-    .side_footer {
-        font-family: 'Nunito', sans-serif;
-        font-size: calc(10.5px + 6 * ((100vw - 1020px) / 680));
-        font-weight: 600;
-        position: fixed;
-        transform: rotate(-270deg);
-        user-select: none;
-        left: 100%;
-        top: 40%;
-        text-align: center;
-        color: #000000;
-        margin-left: -10.5%;
-        background: linear-gradient(to right, #7584c5, #f0f2f0);
-        white-space: nowrap;
-        padding: .5%;
+.side_footer {
+    font-family: 'Nunito', sans-serif;
+    font-size: calc(10.5px + 6 * ((100vw - 1020px) / 680));
+    font-weight: 600;
+    position: fixed;
+    transform: rotate(-270deg);
+    user-select: none;
+    left: 100%;
+    top: 40%;
+    text-align: center;
+    color: #000000;
+    margin-left: -10.5%;
+    background: linear-gradient(to right, #7584c5, #f0f2f0);
+    white-space: nowrap;
+    padding: .5%;
+    box-shadow: 1px 1px 13px 2px rgba(0, 0, 0, 0.75);
 }
 
-.copyright_text{
+.side_footer:hover {
+    background: linear-gradient(to right, #c9d6ff, #deabab);
+}
+
+.copyright_text {
     margin: 2%;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -427,6 +433,7 @@ body {
         grid-template-rows: repeat(15, 3.8vh);
         grid-gap: 0;
     }
+
     .yellow_seed_container,
     .red_seed_container,
     .green_seed_container,
@@ -444,32 +451,41 @@ body {
         box-shadow: 0 1px 3px .1px rgba(0, 0, 0, .75);
     }
 
-    .red_seed:hover{
+    .red_seed:hover {
         box-shadow: 0 1px 3px .1px rgba(238, 85, 85, 0.774);
     }
-    
-    .green_seed:hover{
+
+    .green_seed:hover {
         box-shadow: 0 1px 3px .1px rgba(85, 238, 154, 0.774);
     }
-    .blue_seed:hover{
-        box-shadow: 0 1px 3px .1px rgba(85, 177, 238, 0.774);
 
-    }.yellow_seed:hover{
+    .blue_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(85, 177, 238, 0.774);
+    }
+
+    .yellow_seed:hover {
         box-shadow: 0 1px 3px .1px rgba(255, 235, 59, 0.774);
     }
-    
-
 
     .dice {
         width: 5.5vh;
     }
 
     .dice:hover {
-        width: 5.7vh; 
+        width: 5.7vh;
     }
 
     .player_name {
         font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
         text-shadow: 1px 1px 1px #130501;
+    }
+
+    .side_footer {
+        font-size: calc(14.5px + 6 * ((100vw - 1020px) / 680));
+        box-shadow: 1px 1px 6px 0.5px rgba(0, 0, 0, 0.75);
+        transform: rotate(-0deg);
+        left: 50%;
+        top: 95%;
+        margin-left: -15%;
     }
 }
