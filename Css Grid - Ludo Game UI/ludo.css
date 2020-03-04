@@ -419,7 +419,8 @@ body {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 767px) {
+/* mobile screens */
+@media screen and (max-width: 500px) {
     body {
         background: linear-gradient(to right, #bdc3c7, #2c3e50);
         margin: .5px;
@@ -489,3 +490,34 @@ body {
         margin-left: -15%;
     }
 }
+
+/* Ipad screens */
+
+@media screen and (max-width: 1024px){
+    body {
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+        margin: .5px;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .container {
+        margin: 15% 5%;
+        grid-template-rows: repeat(15, 4.3vh);
+        grid-gap: 0;
+    }
+    .yellow_seed_container,
+    .red_seed_container,
+    .green_seed_container,
+    .blue_seed_container {
+        grid-template-rows: repeat(6, 4vh);
+    }
+    .yellow_seed,
+    .red_seed,
+    .green_seed,
+    .blue_seed {
+        width: 2.5vh;
+        height: 2.5vh;
+    }
+  }
