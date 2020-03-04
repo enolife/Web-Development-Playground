@@ -417,7 +417,7 @@ body {
 }
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES - PORTRAITS*/
 
 /* mobile screens */
 @media screen and (max-width: 500px) {
@@ -476,11 +476,6 @@ body {
         width: 5.7vh;
     }
 
-    .player_name {
-        font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
-        text-shadow: 1px 1px 1px #130501;
-    }
-
     .side_footer {
         font-size: calc(14.5px + 6 * ((100vw - 1020px) / 680));
         box-shadow: 1px 1px 6px 0.5px rgba(0, 0, 0, 0.75);
@@ -504,7 +499,7 @@ body {
 
     .container {
         margin: 15% 5%;
-        grid-template-rows: repeat(15, 4.3vh);
+        grid-template-rows: repeat(15, 4vh);
         grid-gap: 0;
     }
     .yellow_seed_container,
@@ -519,5 +514,33 @@ body {
     .blue_seed {
         width: 2.5vh;
         height: 2.5vh;
+        border-width: 1.5px;
+    }
+    
+    .red_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(238, 85, 85, 0.774);
+    }
+
+    .green_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(85, 238, 154, 0.774);
+    }
+
+    .blue_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(85, 177, 238, 0.774);
+    }
+
+    .yellow_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(255, 235, 59, 0.774);
+    }
+    .dice {
+        width: 7vh;
+    }
+
+    .dice:hover {
+        width: 7.5vh;
+    }
+    .player_name {
+        font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
+        text-shadow: 1px 1px 1px #130501;
     }
   }
