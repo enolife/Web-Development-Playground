@@ -419,6 +419,65 @@ body {
 
 /* MEDIA QUERIES - PORTRAITS*/
 
+/* Ipad screens */
+
+@media screen and (max-width: 1024px){
+    body {
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+        margin: 1px;
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .container {
+        margin: 15% 5%;
+        grid-template-rows: repeat(15, 4vh);
+        grid-gap: 0;
+    }
+    .yellow_seed_container,
+    .red_seed_container,
+    .green_seed_container,
+    .blue_seed_container {
+        grid-template-rows: repeat(6, 4vh);
+    }
+    .yellow_seed,
+    .red_seed,
+    .green_seed,
+    .blue_seed {
+        width: 2.5vh;
+        height: 2.5vh;
+        border-width: 1.5px;
+    }
+    
+    .red_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(238, 85, 85, 0.774);
+    }
+
+    .green_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(85, 238, 154, 0.774);
+    }
+
+    .blue_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(85, 177, 238, 0.774);
+    }
+
+    .yellow_seed:hover {
+        box-shadow: 0 1px 3px .1px rgba(255, 235, 59, 0.774);
+    }
+    .dice {
+        width: 7vh;
+    }
+
+    .dice:hover {
+        width: 7.5vh;
+    }
+    .player_name {
+        font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
+        text-shadow: 1px 1px 1px #130501;
+    }
+  }
+
 /* mobile screens */
 @media screen and (max-width: 500px) {
     body {
@@ -486,61 +545,3 @@ body {
     }
 }
 
-/* Ipad screens */
-
-@media screen and (max-width: 1024px){
-    body {
-        background: linear-gradient(to right, #bdc3c7, #2c3e50);
-        margin: .5px;
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    .container {
-        margin: 15% 5%;
-        grid-template-rows: repeat(15, 4vh);
-        grid-gap: 0;
-    }
-    .yellow_seed_container,
-    .red_seed_container,
-    .green_seed_container,
-    .blue_seed_container {
-        grid-template-rows: repeat(6, 4vh);
-    }
-    .yellow_seed,
-    .red_seed,
-    .green_seed,
-    .blue_seed {
-        width: 2.5vh;
-        height: 2.5vh;
-        border-width: 1.5px;
-    }
-    
-    .red_seed:hover {
-        box-shadow: 0 1px 3px .1px rgba(238, 85, 85, 0.774);
-    }
-
-    .green_seed:hover {
-        box-shadow: 0 1px 3px .1px rgba(85, 238, 154, 0.774);
-    }
-
-    .blue_seed:hover {
-        box-shadow: 0 1px 3px .1px rgba(85, 177, 238, 0.774);
-    }
-
-    .yellow_seed:hover {
-        box-shadow: 0 1px 3px .1px rgba(255, 235, 59, 0.774);
-    }
-    .dice {
-        width: 7vh;
-    }
-
-    .dice:hover {
-        width: 7.5vh;
-    }
-    .player_name {
-        font-size: calc(13.3px + 6 * ((100vw - 1020px) / 680));
-        text-shadow: 1px 1px 1px #130501;
-    }
-  }
