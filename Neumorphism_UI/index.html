@@ -5,26 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Neomorphism UI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+        <nav class="nav">
 
-    <nav class="nav">
-        Nav here
-    </nav>
-    <section class="visa_card">
-        Visa card here
-    </section>
-    <section class="btn">
-        Buttons here
-    </section>
-    <section class="balance">
-        Balance here
-    </section>
-    <section class="history">
-        Transactions history here
-    </section>
+            <!-- Time -->
+            <ul class="time">
+                <li>7:51</li>
+            </ul>
+
+            <!--horizontal-meatball, wifi & battery icons     -->
+            <ul class="wifi_battery">
+                <li class="meatball_menu">••••</li>
+                <li><i class="material-icons wifi">wifi</i></li>
+                <li><img class="battery"
+                        src="https://res.cloudinary.com/dvhndpbun/image/upload/v1584276405/ios-battery-full_edit_gdwsvt.svg"
+                        alt=""></li>
+            </ul>
+
+            <!-- Hamburger-menu & profil pic -->
+            <ul class="hamburger_menu">
+                <li><i class="material-icons-round hamburger_icon">subject</i></li>
+            </ul>
+
+            <ul class="profile_picture">
+                <li><img class="profile"
+                        src="https://res.cloudinary.com/dvhndpbun/image/upload/r_max/alXDniiT_400x400_lnmega.png"
+                        alt=""></li>
+            </ul>
+
+        </nav>
+
+        <section class="visa_card">
+            <h2>PERSONAL CARD</h2>
+            <div class="visa_card_container">
+                <p class="avail_balance">Available Balance</p>
+                <img src="https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1584302122/visa-card-logo-png-transparent_pljppj.png"
+                    alt="visa icon" class="visa_icon">
+                <h2 class="numeric_balance">$24.560</h2>
+
+                <p class="card_number">•••• •••• •••• 3521</p>
+                <h3 class="holder_text">HOLDER</h3>
+                <p class="ownwer_name">enouwem jim</p>
+                <h3 class="expiry_text">EXPIRY</h3>
+                <p class="expiry_date">07/20</p>
+            </div>
+        </section>
+        <section class="btn">
+            Buttons here
+        </section>
+        <section class="balance">
+            Balance here
+        </section>
+        <section class="history">
+            Transactions history here
+        </section>
+    </div>
 
 </body>
 

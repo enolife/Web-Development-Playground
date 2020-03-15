@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #000;
+    font-family: 'Cabin', sans-serif;
+}
+
+li {
+    display: inline;
+    align-items: center;
+    list-style: none;
+}
+
+/* Nav section */
+.container {
+    max-width: 366px;
+    margin: auto;
+    background: #dffd;
+}
+
+.nav {
+    background: #e1e1eb;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 55px;
+    align-items: center;
+    padding-top: 8px;
+    grid-template-areas: "time wifi_battery"
+        "hamburger_menu profile_picture"
+
+}
+
+.time {
+    grid-area: time;
+}
+
+.wifi_battery {
+    grid-area: wifi_battery;
+}
+
+.meatball_menu {
+    color: #717172;
+}
+
+.wifi {
+    font-size: 17px;
+    text-shadow: rgb(71, 70, 70) 0px -1px 1px;
+}
+
+.wifi,
+.meatball_menu {
+    vertical-align: -8px;
+}
+
+/* .battery {
+    vertical-align: top;
+} */
+
+
+.hamburger_menu {
+    grid-area: hamburger_menu;
+}
+
+.hamburger_icon {
+    font-size: 35px;
+}
+
+.profile_picture {
+    grid-area: profile_picture;
+}
+
+.profile {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.nav .material-icons-round {
+    color: #f43932;
+}
+
+.battery {
+    width: 27px;
+    vertical-align: top;
+}
+
+/* Visa Card */
+.visa_card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 50px 40px;
+    max-width: 310px;
+    margin: auto;
+    background: #e1e1eb;
+    padding: 10px 20px;
+    grid-template-areas: "balance visa"
+        "cardnumber cardnumber"
+        "holder expiry"
+}
+
+.visa_icon {
+    width: 50px;
+}
+
+.avail_balance,
+.numeric_balance {
+    grid-area: balance;
+}
+
+.holder_text {
+    font-size: .5rem;
+    color: #717172;
+}
+
+
+.visa_icon {
+    grid-area: visa;
+}
+
+.card_number {
+    grid-area: cardnumber;
+}
+
+.holder_text,
+.owner_name {
+    grid-area: holder;
+}
+
+.expiry_date,
+.expiry_text {
+    grid-area: expiry;
+}
