@@ -201,11 +201,11 @@ ul {
     grid-gap: 10px;
     max-width: 1100px;
     margin: auto;
-    color: #616161;
 }
 
 .links_content li {
     margin: 18px 0;
+    color: #616161
 }
 
 .links_content h3 {
@@ -236,4 +236,9 @@ ul {
 
 .footer_content div {
     grid-column: 2/7;
+}
+
+.footer_content ul,
+.footer_content a {
+    color: #616161;
 }
