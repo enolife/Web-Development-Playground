@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Neomorphism UI</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +18,7 @@
 
             <!-- Time -->
             <ul class="time">
-                <li>7:51</li>
+                <li>7:50</li>
             </ul>
 
             <!--horizontal-meatball, wifi & battery icons     -->
@@ -42,29 +44,67 @@
         </nav>
 
         <section class="visa_card">
-            <h2>PERSONAL CARD</h2>
+            <h3 class="personal_card">PERSONAL CARD</h3>
             <div class="visa_card_container">
                 <p class="avail_balance">Available Balance</p>
                 <img src="https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1584302122/visa-card-logo-png-transparent_pljppj.png"
                     alt="visa icon" class="visa_icon">
                 <h2 class="numeric_balance">$24.560</h2>
 
-                <p class="card_number">•••• •••• •••• 3521</p>
+                <p class="card_number"> ••••&nbsp &nbsp ••••&nbsp &nbsp ••••&nbsp &nbsp 3521</p>
                 <h3 class="holder_text">HOLDER</h3>
-                <p class="ownwer_name">enouwem jim</p>
+                <p class="owner_name">enouwem jim</p>
                 <h3 class="expiry_text">EXPIRY</h3>
                 <p class="expiry_date">07/20</p>
             </div>
         </section>
-        <section class="btn">
-            Buttons here
+
+        <section class="btn_container">
+            <span class="neumorph_button"><i class="las la-search"></i></span>
+            <span class="neumorph_button"><i class="las la-sliders-h"></i></span>
+            <span class="neumorph_button"><i class="las la-exchange-alt"></i></span>
+            <span class="neumorph_button"><i class="las la-plus-circle"></i></span>
+            <p class="button_text">SEARCH</p>
+            <p class="button_text">OPTIONS</p>
+            <p class="button_text">CHANGE</p>
+            <p class="button_text">ADD</p>
         </section>
-        <section class="balance">
-            Balance here
+
+
+        <section class="balance_container">
+
+            <ul class="balance_cell">
+                <p class="your_balance-text">Your Balance</p>
+                <p class="numeric_balance-2">$24.560<span class="decimal_text">.00</span></p>
+            </ul>
+
+            <ul class="income_cell">
+                <p class="income_text">Income</p>
+                <p class="income_balance"><i class="las la-arrow-up"></i>1,240</p>
+            </ul>
+
+            <ul class="expense_cell">
+                <p class="expense_text">Expense</p>
+                <p class="expense_balance"><i class="las la-arrow-down"></i>2,449</p>
+            </ul>
+
         </section>
-        <section class="history">
-            Transactions history here
+
+        <!-- History -->
+        <div class="last_history_cont">
+            <p class="last_hist-text">LAST HISTORY</p>
+            <p class="last_hist-meatball">••••</p>
+        </div>
+        <section class="investment_history">
+            <span class="neumorph_square-button"><i class="las la-plus-circle"></i></span>
+            <p class="investment_text">Investment Bitcoin</p>
+            <span class="transfer_text">Transfer #981</span>
+
         </section>
+        <br>
+        <br>
+        <br>
+
     </div>
 
 </body>
