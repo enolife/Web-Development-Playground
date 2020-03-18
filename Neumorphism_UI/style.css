@@ -11,20 +11,17 @@ html {
 body {
     background: #000;
     font-family: 'Cabin', sans-serif;
-    margin-top: 40px;
+    margin-top: 6px;
 }
 
-li {
-    display: inline;
-    align-items: center;
-    list-style: none;
-}
 
 /* Nav section */
+
 .container {
     max-width: 366px;
     margin: auto;
     background: #e1e1eb;
+    user-select: none;
 }
 
 .nav {
@@ -34,20 +31,28 @@ li {
     grid-template-rows: 30px 55px;
     align-items: center;
     margin-bottom: 30px;
-    grid-template-areas: "time wifi_battery"
-        "hamburger_menu profile_picture"
-
+    grid-template-areas: "time wifi_battery""hamburger_menu profile_picture"
 }
 
-.time {
+.time_cont {
     grid-area: time;
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    padding-inline-start: 25px;
+}
+
+#time {
+    font-size: .87rem;
+    font-weight: 200;
+    letter-spacing: .3px;
+    -webkit-text-stroke: .5px;
 }
 
 .wifi_battery {
     grid-area: wifi_battery;
+    margin-left: 60px;
+}
+
+.wifi_battery p {
+    display: inline-block;
 }
 
 .meatball_menu {
@@ -59,22 +64,32 @@ li {
     text-shadow: rgb(71, 70, 70) 0px -1px 1px;
 }
 
-.wifi,
-.meatball_menu {
+.meatball_menu,
+.wifi {
     vertical-align: -8px;
 }
 
-/* .battery {
+.battery {
+    width: 27px;
     vertical-align: top;
-} */
-
+    margin-top: 1.8px;
+}
 
 .hamburger_menu {
     grid-area: hamburger_menu;
+    padding-inline-start: 25px;
 }
 
 .hamburger_icon {
     font-size: 35px;
+    /* reduce icon width */
+    transform: scale(.85, 1);
+    /* make icon thinner */
+    -webkit-text-stroke: .6px #e1e1eb;
+}
+
+.nav .material-icons-round {
+    color: #f43932;
 }
 
 .profile_picture {
@@ -82,41 +97,41 @@ li {
 }
 
 .profile {
-    width: 40px;
-    margin-left: 20px;
+    width: 45px;
+    margin-left: 69px;
 }
 
-.nav .material-icons-round {
-    color: #f43932;
-}
 
-.battery {
-    width: 27px;
-    vertical-align: top;
-}
+/* Visa Card */
 
 .personal_card {
     font-size: .78rem;
-    font-weight: 500;
+    font-weight: 200;
     color: #a1a1a4;
-    margin: 0 0 20px 28px;
+    margin: 0 0 19px 28px;
 }
 
-/* Visa Card */
 .visa_card_container {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 60px 50px 50px;
+    grid-template-rows: 50px 60px 50px;
     max-width: 310px;
     margin: auto;
     background: #e1e1eb;
     border: 1px solid rgba(255, 255, 255, 0.20);
     border-radius: 4px;
     padding: 20px 18px;
-    box-shadow: 10px 10px 13px -2px rgba(128, 124, 128, 0.51), -6px -6px 8px 2px rgba(253, 253, 253, 0.44);
-    grid-template-areas: "balance visa"
-        "cardnumber cardnumber"
-        "holder expiry"
+    box-shadow: 10px 10px 13px -2px rgba(134, 130, 134, 0.5), -6px -6px 8px 2px rgba(253, 253, 253, 0.44);
+    grid-template-areas: "balance visa""cardnumber cardnumber""holder expiry"
+}
+
+.avail_balance,
+.numeric_balance {
+    grid-area: balance;
+}
+
+.visa_icon {
+    width: 47px;
 }
 
 .numeric_balance {
@@ -127,7 +142,8 @@ li {
 .numeric_balance-2,
 .card_number {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
+    -webkit-text-stroke: .2px;
 }
 
 .numeric_balance,
@@ -140,32 +156,16 @@ li {
     color: #464646;
 }
 
-
-
-.card_number {
-    letter-spacing: 4.2px;
-}
-
-.visa_icon {
-    width: 50px;
-}
-
-.avail_balance,
-.numeric_balance {
-    grid-area: balance;
-}
-
-
 .avail_balance,
 .holder_text,
 .expiry_text,
 .button_text {
-    font-size: .64rem;
+    font-size: .53rem;
     letter-spacing: 1px;
     font-weight: 300;
     color: #a1a1a4;
+    padding-top: 4px;
 }
-
 
 .visa_icon {
     grid-area: visa;
@@ -173,6 +173,12 @@ li {
 
 .card_number {
     grid-area: cardnumber;
+    letter-spacing: 2.1px;
+}
+
+.hidden_pin {
+    -webkit-text-stroke: 1.4px;
+    letter-spacing: 5px;
 }
 
 .holder_text,
@@ -180,23 +186,27 @@ li {
     grid-area: holder;
 }
 
-.expiry_date,
 .expiry_text {
+    margin-right: 3.3px;
+}
+
+.expiry_text,
+.expiry_date {
     display: grid;
     grid-area: expiry;
     justify-content: end;
 }
 
-
-
 .owner_name,
 .expiry_date {
     margin-top: 23px;
-    font-size: .7rem;
-    font-weight: 600;
-    letter-spacing: 1.3px;
+    font-size: .77rem;
+    letter-spacing: .7px;
     text-transform: uppercase;
+    -webkit-text-stroke: .2px;
+    line-height: 2;
 }
+
 
 /* Btn section */
 
@@ -208,8 +218,10 @@ li {
     margin: auto;
     justify-items: center;
     margin-top: 40px;
-
 }
+
+
+/* round button style */
 
 .neumorph_button {
     height: 43px;
@@ -221,11 +233,16 @@ li {
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
 }
 
+.neumorph_button:active {
+    box-shadow: inset 3px 3px 7px rgba(114, 114, 114, 0.74), inset -3px -3px 7px #FFFFFF;
+}
+
 .neumorph_button i,
 .neumorph_square-button i {
     transform: scaleX(-1);
     font-size: 20px;
 }
+
 
 /* Button icon colors */
 
@@ -247,6 +264,7 @@ li {
     color: #ec8c23;
 }
 
+
 /* make icons bolder */
 
 .la-search,
@@ -254,47 +272,40 @@ li {
 .la-exchange-alt,
 .la-plus-circle {
     -webkit-text-stroke: .2px;
-
 }
 
-/* Button text */
+
+/* Button description */
 
 .button_text {
     font-size: .6rem;
 }
 
+
 /* Balance Container */
-.balance_container p {
-    display: inline-block;
-}
 
 .balance_container {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, 50px);
-    grid-gap: 2px;
+    grid-gap: 1px;
     background: rgba(173, 171, 171, 0.149);
     align-items: center;
     border-radius: 4px;
-    box-shadow: 10px 10px 13px -2px rgba(128, 124, 128, 0.51), -6px -6px 8px 2px rgba(253, 253, 253, 0.44);
+    box-shadow: 10px 10px 13px -2px rgba(134, 130, 134, 0.5), -6px -6px 8px 2px rgba(253, 253, 253, 0.44);
     max-width: 310px;
-    margin: 0 auto 38px;
-
+    margin: 25px auto 28px;
 }
-
 
 .balance_cell {
     grid-row: 1/3;
     display: grid;
-    padding: 0 0 1.3px 0;
+    padding: 0;
     justify-items: center;
-
 }
 
-.balance_cell,
-.income_cell,
-.expense_cell {
-    background: #e1e1eb;
+.balance_container p {
+    display: inline-block;
 }
 
 .your_balance-text {
@@ -309,27 +320,47 @@ li {
     font-size: .78rem;
 }
 
+.decimal_text {
+    color: #a1a1a4;
+    font-size: .85rem;
+}
+
+.balance_cell,
+.income_cell,
+.expense_cell {
+    background: #e1e1eb;
+}
+
+.income_cell,
+.expense_cell {
+    padding-inline-start: 18px
+}
+
+.income_text,
+.expense_text {
+    -webkit-text-stroke: .25px;
+}
+
 .income_balance,
 .expense_balance {
     font-size: .8rem;
     padding: 5px;
-    -webkit-text-stroke: .2px;
 }
 
 .income_balance i,
 .expense_balance i {
     margin-right: 2.5px;
     -webkit-text-stroke: .40px;
-
 }
-
 
 
 /* History */
 
 .last_history_cont {
+    color: #a1a1a4;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 35px;
     max-width: 310px;
     margin: auto;
 }
@@ -337,11 +368,17 @@ li {
 .last_hist-text {
     display: grid;
     justify-items: start;
+    font-size: .78rem;
+    font-weight: 200;
 }
 
 .last_hist-meatball {
     display: grid;
     justify-items: end;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 1.8px;
+    margin: 0;
 }
 
 .investment_history {
@@ -351,13 +388,15 @@ li {
     grid-template-rows: 90px;
     background: #e1e1eb;
     grid-template-areas: "square_button investment_bitcoin"
-
 }
+
+
+/* square button */
 
 .neumorph_square-button {
     height: 43px;
     width: 43px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: grid;
     grid-area: square_button;
     align-items: center;
@@ -365,6 +404,16 @@ li {
     margin-top: 20px;
     margin-left: 30px;
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
+}
+
+hr {
+    grid-area: square_button;
+    height: 90px;
+    margin-top: -1px;
+    width: 1px;
+    border: none;
+    background: rgba(173, 171, 171, 0.149);
+    margin-right: 17px;
 }
 
 .investment_text,
@@ -381,5 +430,68 @@ li {
     font-size: .78rem;
     padding-top: 55px;
     color: #a1a1a4;
+}
 
+
+/* MEDIA QUERIES - mobile screens*/
+
+@media (max-width: 575px) {
+    body {
+        background: #d7d7dee0;
+        margin: 0;
+    }
+
+    .container {
+        border: 10px solid #d7d7dee0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .nav {
+        margin-bottom: 14px;
+        grid-template-rows: 30px 40px;
+    }
+
+    .wifi_battery {
+        margin-left: 48px;
+    }
+
+    .hamburger_menu {
+        margin-top: 8px;
+    }
+
+    .hamburger_icon {
+        font-size: 31px;
+        -webkit-text-stroke: .8px #e1e1eb;
+    }
+
+    .profile {
+        width: 35px;
+    }
+
+    .personal_card {
+        margin: 0 0 14px 28px;
+    }
+
+    .visa_card_container {
+        grid-template-rows: 40px 50px 40px;
+        padding: 16px 18px;
+    }
+
+    .btn_container {
+        height: 73px;
+        margin-top: 32px;
+    }
+
+    .balance_container {
+        margin: 20px auto 17px;
+    }
+
+    .investment_history {
+        grid-template-rows: 80px;
+    }
+
+    hr {
+        height: 80px;
+    }
 }

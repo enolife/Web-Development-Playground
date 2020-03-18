@@ -14,52 +14,59 @@
 
 <body>
     <div class="container">
-        <nav class="nav">
 
+        <nav class="nav">
             <!-- Time -->
-            <ul class="time">
-                <li>7:50</li>
+            <ul class="time_cont">
+                <p id="time">7:50</p>
             </ul>
 
             <!--horizontal-meatball, wifi & battery icons     -->
             <ul class="wifi_battery">
-                <li class="meatball_menu">••••</li>
-                <li><i class="material-icons wifi">wifi</i></li>
-                <li><img class="battery"
+                <p class="meatball_menu">••••</p>
+                <p><i class="material-icons wifi">wifi</i></p>
+                <p><img class="battery"
                         src="https://res.cloudinary.com/dvhndpbun/image/upload/v1584276405/ios-battery-full_edit_gdwsvt.svg"
-                        alt=""></li>
+                        alt=""></p>
             </ul>
 
             <!-- Hamburger-menu & profil pic -->
             <ul class="hamburger_menu">
-                <li><i class="material-icons-round hamburger_icon">subject</i></li>
+                <p><i class="material-icons-round hamburger_icon">subject</i></p>
             </ul>
 
             <ul class="profile_picture">
-                <li><img class="profile"
+                <p><img class="profile"
                         src="https://res.cloudinary.com/dvhndpbun/image/upload/r_max/alXDniiT_400x400_lnmega.png"
-                        alt=""></li>
+                        alt=""></p>
             </ul>
-
         </nav>
 
+        <!-- Visa Card -->
         <section class="visa_card">
+
             <h3 class="personal_card">PERSONAL CARD</h3>
             <div class="visa_card_container">
+
                 <p class="avail_balance">Available Balance</p>
                 <img src="https://res.cloudinary.com/dvhndpbun/image/upload/q_auto:eco/v1584302122/visa-card-logo-png-transparent_pljppj.png"
                     alt="visa icon" class="visa_icon">
                 <h2 class="numeric_balance">$24.560</h2>
 
-                <p class="card_number"> ••••&nbsp &nbsp ••••&nbsp &nbsp ••••&nbsp &nbsp 3521</p>
+                <p class="card_number"> <span class="hidden_pin">••••&nbsp &nbsp ••••&nbsp &nbsp ••••&nbsp &nbsp</span>
+                    3521</p>
                 <h3 class="holder_text">HOLDER</h3>
                 <p class="owner_name">enouwem jim</p>
                 <h3 class="expiry_text">EXPIRY</h3>
                 <p class="expiry_date">07/20</p>
+
             </div>
+
         </section>
 
+        <!-- Buttons -->
         <section class="btn_container">
+
             <span class="neumorph_button"><i class="las la-search"></i></span>
             <span class="neumorph_button"><i class="las la-sliders-h"></i></span>
             <span class="neumorph_button"><i class="las la-exchange-alt"></i></span>
@@ -68,14 +75,16 @@
             <p class="button_text">OPTIONS</p>
             <p class="button_text">CHANGE</p>
             <p class="button_text">ADD</p>
+
         </section>
 
 
+        <!-- Balance -->
         <section class="balance_container">
 
             <ul class="balance_cell">
                 <p class="your_balance-text">Your Balance</p>
-                <p class="numeric_balance-2">$24.560<span class="decimal_text">.00</span></p>
+                <p class="numeric_balance-2">$24.560<span class="decimal_text">,00</span></p>
             </ul>
 
             <ul class="income_cell">
@@ -93,16 +102,18 @@
         <!-- History -->
         <div class="last_history_cont">
             <p class="last_hist-text">LAST HISTORY</p>
-            <p class="last_hist-meatball">••••</p>
+            <p class="last_hist-meatball">•••</p>
         </div>
+
+        <!-- Investment History cont -->
         <section class="investment_history">
+
             <span class="neumorph_square-button"><i class="las la-plus-circle"></i></span>
+            <hr>
             <p class="investment_text">Investment Bitcoin</p>
             <span class="transfer_text">Transfer #981</span>
 
         </section>
-        <br>
-        <br>
         <br>
 
     </div>
@@ -110,3 +121,6 @@
 </body>
 
 </html>
+
+
+<!-- There's no easter egg or awards for scrolling to this point 😜-->
