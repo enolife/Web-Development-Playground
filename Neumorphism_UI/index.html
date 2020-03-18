@@ -18,7 +18,7 @@
         <nav class="nav">
             <!-- Time -->
             <ul class="time_cont">
-                <p id="time">7:50</p>
+                <p id="time"></p>
             </ul>
 
             <!--horizontal-meatball, wifi & battery icons     -->
@@ -118,6 +118,18 @@
 
     </div>
 
+    <!-- Time Script -->
+    <script>
+        function GetClock() {
+            var e = new Date,
+                t = e.getHours(),
+                n = e.getMinutes();
+            n <= 9 && (n = "0" + n);
+            var o = t + ":" + n;
+            document.getElementById("time").innerHTML = o
+        }
+        GetClock(), setInterval(GetClock, 1e3);
+    </script>
 </body>
 
 </html>

@@ -81,6 +81,7 @@ body {
 }
 
 .hamburger_icon {
+    color: #f43932;
     font-size: 35px;
     /* reduce icon width */
     transform: scale(.85, 1);
@@ -88,8 +89,14 @@ body {
     -webkit-text-stroke: .6px #e1e1eb;
 }
 
-.nav .material-icons-round {
-    color: #f43932;
+.hamburger_icon:hover {
+    color: #b71e18;
+}
+
+.hamburger_icon:active {
+    color: #5b0707;
+    background-color: #ff111117;
+    border-radius: 2px;
 }
 
 .profile_picture {
@@ -406,6 +413,10 @@ body {
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
 }
 
+.neumorph_square-button:active {
+    box-shadow: inset 3px 3px 7px rgba(114, 114, 114, 0.74), inset -3px -3px 7px #FFFFFF;
+}
+
 hr {
     grid-area: square_button;
     height: 90px;
@@ -431,6 +442,14 @@ hr {
     padding-top: 55px;
     color: #a1a1a4;
 }
+
+/* Mouse cursor behaviour */
+.neumorph_square-button,
+.neumorph_button,
+.hamburger_icon {
+    cursor: pointer;
+}
+
 
 
 /* MEDIA QUERIES - mobile screens*/
