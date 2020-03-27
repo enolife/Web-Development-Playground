@@ -242,3 +242,31 @@ ul {
 .footer_content a {
     color: #616161;
 }
+
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+
+    .home_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .xbox .content p {
+        display: none;
+    }
+
+    .xbox .content h2 {
+        margin-bottom: 20px;
+    }
+
+    .onedrive_content p {
+        width: auto;
+    }
+
+    .links .links_content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
