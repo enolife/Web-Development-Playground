@@ -249,7 +249,12 @@ ul {
 }
 
 .footer_content div {
-    grid-column: 2/7;
+    grid-column: 1/7;
+}
+
+.footer_content div i {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .footer_content ul,
@@ -331,8 +336,23 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .footer_content {
+        max-width: 90%;
+    }
 
+    .footer_content ul {
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: 40px repeat(3, 30px);
+        white-space: nowrap;
+        text-align: center;
+        justify-items: start;
+    }
+
+    .footer_content div {
+        grid-column: 1/4;
+    }
 }
+
 
 @media (max-width: 500px) {
 
@@ -345,3 +365,9 @@ ul {
     }
 
 }
+
+@media (max-width: 340px) {
+    .footer_content ul {
+        grid-template-columns: repeat(3, 100px);
+
+    }
