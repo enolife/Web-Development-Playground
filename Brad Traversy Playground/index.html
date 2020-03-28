@@ -13,6 +13,10 @@
 </head>
 
 <body>
+
+    <div class="hamburger-btn">
+        <i class="fas fa-bars"></i>
+    </div>
     <div class="container">
         <!-- Navbar -->
         <nav class="main_nav">
@@ -245,6 +249,10 @@
 
     </section>
 
+    <script>
+        document.querySelector(".hamburger-btn").addEventListener("click", () => document.querySelector(".main_menu")
+            .classList.toggle("show"))
+    </script>
 </body>
 
 </html>
