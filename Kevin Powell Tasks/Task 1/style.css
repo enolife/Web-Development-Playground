@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -8,10 +10,11 @@ body {
 .container {
     background: #23424A;
     color: white;
-
     width: 80%;
     margin: 0 auto;
-    
     padding: 2em;
-    height: 300px;
+}
+
+.intro-content {
+    width: 40%;
 }
