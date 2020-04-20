@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #fff;
+    font-size: 1.1rem;
 }
 
 a {
@@ -27,22 +28,27 @@ a {
 
 .main-container {
     background: #23424A;
-    padding: 70px 80px 150px;
+    padding: 100px 0;
 }
 
 .showcase {
-    width: 100%;
-    max-width: 550px;
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 .showcase h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 .showcase p {
-    font-size: 1.05rem;
     line-height: 2;
     margin-bottom: 70px;
+}
+
+.showcase h1,
+.showcase p {
+    width: 60%
 }
 
 .showcase a {
