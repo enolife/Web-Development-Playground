@@ -54,3 +54,7 @@ a {
 .showcase a {
     text-transform: uppercase;
 }
+
+.showcase a:hover {
+    background: #83f2f8;
+}
