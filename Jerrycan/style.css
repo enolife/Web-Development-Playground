@@ -48,7 +48,7 @@ body {
 
 .jerrycan-body {
     padding: 16.2rem 0;
-    background: #dddee0;
+    background: linear-gradient(#dddee0 85%, #e0e1e3 85%);
     border-radius: 0 0 80px 80px;
     position: relative;
     box-shadow: inset -65px 10px 19px #d8d8d8, inset 65px 0 19px #e6e6e6;
