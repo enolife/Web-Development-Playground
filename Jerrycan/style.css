@@ -20,15 +20,6 @@ body {
     margin-top: 13rem;
 }
 
-.jerrycan-body {
-    padding: 14rem 0;
-    background: #dddee0;
-    /* border-radius: 150px 0 38px 38px; */
-    position: relative;
-    box-shadow: inset -65px 1px 0px #d6d9dd, inset 57px 1px 0px #d3d5da;
-    box-shadow: inset -65px 10px 19px #d8d8d8, inset 57px 0 19px #e6e6e6;
-}
-
 .jerrycan-top {
     padding: 4.5rem 0;
     background: #dddee0;
@@ -41,7 +32,6 @@ body {
     right: 0;
     box-shadow: 0 10px 12px -6px #dddee0;
 }
-
 
 /* Handle space */
 .jerrycan-top:before {
@@ -56,6 +46,15 @@ body {
     border-radius: 30px 30px 50px 50px;
 }
 
+.jerrycan-body {
+    padding: 14rem 0;
+    background: #dddee0;
+    /* border-radius: 150px 0 38px 38px; */
+    position: relative;
+    box-shadow: inset -65px 1px 0px #d6d9dd, inset 57px 1px 0px #d3d5da;
+    box-shadow: inset -65px 10px 19px #d8d8d8, inset 57px 0 19px #e6e6e6;
+}
+
 .jerrycan-body:before {
     content: "";
     position: absolute;
@@ -68,7 +67,6 @@ body {
     border-radius: 0 14px 0 0;
     box-shadow: 0 4px 8px -3px #dddee0;
 }
-
 
 /* jerrycan cover */
 .jerrycan-body:after {
@@ -101,6 +99,8 @@ body {
     box-shadow: 0 -10px 10px -6px #dddee0;
 }
 
+
+/* Media Breakpoint */
 @media (max-width: 430px) {
     .container {
         width: 70%;
